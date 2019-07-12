@@ -11,6 +11,7 @@ import {
 import { Subject } from 'rxjs';
 
 const qaIcon = {
+  position: 'fixed',
   width: '24px',
   height: '24px',
   'line-height': '24px',
@@ -23,12 +24,13 @@ const qaIcon = {
 };
 
 const qaBottom = {
-  width: 'calc(100% - 20px)',
+  position: 'fixed',
+  width: '120px',
   height: '36px',
   'line-height': '36px',
   'text-align': 'center',
   bottom: '10px',
-  right: '10px',
+  right: 'calc(50% - 60px)',
   'background-color': 'blue',
   color: 'white',
   'border-radius': '4px',
