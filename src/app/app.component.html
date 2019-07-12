@@ -1,0 +1,12 @@
+<div class="content">
+  scroll to bottom <br>
+   ↓<br>
+   ↓<br>
+   ↓<br>
+   ↓<br>
+</div>
+
+<div class="qa" [@isVisibleChanged]="scrollBottom$ | async">
+  <span *ngIf="!(scrollBottom$ | async)" >?</span>
+  <span *ngIf="(scrollBottom$ | async)" >Contact Us</span>
+</div>
